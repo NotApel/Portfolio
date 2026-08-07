@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Azhan — Software Engineer & Designer</title>
+    <!-- Load Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#ccff00',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0b0b0c] text-white font-sans overflow-x-hidden selection:bg-accent selection:text-black">
+
+    <!-- Header -->
+    <header class="fixed w-full flex justify-between items-center py-8 px-[5%] z-50 bg-[#0b0b0c]/80 backdrop-blur-md">
+        <div class="font-black tracking-widest">AZHAN // 2026</div>
+        <nav class="space-x-10 text-sm font-medium text-gray-400">
+            <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+            <a href="#about" class="hover:text-accent transition-colors">About</a>
+            <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 min-h-screen items-center px-[5%] gap-16 pt-32">
+            <div class="max-w-2xl">
+                <span class="text-accent font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Software Engineer & Creative Developer</span>
+                <h1 class="text-6xl md:text-8xl font-black leading-[0.9] mb-8">
+                    Engineering <br><span class="italic text-accent">Digital Artistry.</span>
+                </h1>
+                <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-lg">
+                    Building robust Android applications and backend-free tools with a meticulous eye for graphic design and interactive aesthetics.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#projects" class="bg-accent text-black font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform shadow-lg shadow-accent/20">Explore Works</a>
+                    <a href="#contact" class="border border-white/20 font-bold py-4 px-10 rounded-full hover:border-white transition-all">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex justify-center">
+                <div class="w-80 h-[400px] bg-gradient-to-br from-accent to-gray-800 rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] animate-pulse"></div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="py-32 px-[5%] border-t border-white/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-accent font-bold tracking-[0.2em] uppercase text-sm mb-2 block">About Me</span>
+                    <h2 class="text-4xl md:text-6xl font-black">Who I Am</h2>
+                </div>
+                <p class="text-gray-400 max-w-sm text-sm">A passionate software engineer and designer with a knack for creating visually appealing and functional digital experiences.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        I specialize in developing Android applications and backend-free tools that prioritize user experience and aesthetic appeal. My approach combines technical proficiency with a keen eye for design, ensuring that every project I undertake is both functional and visually engaging.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        With a strong foundation in software engineering principles and a passion for creative problem-solving, I strive to deliver solutions that not only meet but exceed expectations. Whether it's building robust applications or crafting intuitive interfaces, my goal is to create digital experiences that resonate with users.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="w-full h-[300px] bg-gradient-to-br from-accent to-gray-800 rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] animate-pulse"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="py-32 px-[5%] border-t border-white/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-accent font-bold tracking-[0.2em] uppercase text-sm mb-2 block">Selected Works</span>
+                    <h2 class="text-4xl md:text-6xl font-black">Featured Projects</h2>
+                </div>
+                <p class="text-gray-400 max-w-sm text-sm">A collection of custom Android builds, backend-free architectures, and systems engineering.</p>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Project 1: Duri.AI -->
+                <div class="group relative bg-[#141416] border border-white/10 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:border-accent">
+                    <div class="absolute top-0 right-0 w-48 h-48 bg-accent/5 rounded-full blur-3xl group-hover:bg-accent/15 transition-all"></div>
+                    <div class="flex justify-between items-start mb-12">
+                        <span class="text-xs font-bold tracking-widest uppercase py-1 px-3 bg-white/5 rounded-full border border-white/10 text-accent">Web App</span>
+                        <span class="text-gray-500 text-sm font-mono">01 / 03</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 group-hover:text-accent transition-colors">Duri.AI</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        IoT and AI-based durian farm monitoring system designed to help durian farmers improve harvesting efficiency by combining sensors, image processing, and data analytics.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="text-xs py-1 px-3 bg-black/50 text-gray-300 rounded-md">Node.js</span>
+                        <span class="text-xs py-1 px-3 bg-black/50 text-gray-300 rounded-md">React.js</span>
+                        <span class="text-xs py-1 px-3 bg-black/50 text-gray-300 rounded-md">TensorFlow.js</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-sm font-bold">
+                        <a href="https://github.com/NotApel/Duri.AI" class="flex items-center gap-2 text-accent hover:underline">View Source &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Java Student System / Testing Metrics Tool -->
+                <div class="group relative bg-[#141416] border border-white/10 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:border-accent">
+                    <div class="absolute top-0 right-0 w-48 h-48 bg-accent/5 rounded-full blur-3xl group-hover:bg-accent/15 transition-all"></div>
+                    <div class="flex justify-between items-start mb-12">
+                        <span class="text-xs font-bold tracking-widest uppercase py-1 px-3 bg-white/5 rounded-full border border-white/10 text-accent">Web Programming</span>
+                        <span class="text-gray-500 text-sm font-mono">02 / 03</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 group-hover:text-accent transition-colors">Sukiye Restaurant Buffet Reservation and Management System</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        Sukiye is a comprehensive restaurant management system designed to streamline buffet reservation and operations. It features a user-friendly interface for customers to book tables and view menu options, while providing staff with tools for inventory management and order processing.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-8"> 
+                        <span class="text-xs py-1 px-3 bg-black/50 text-gray-300 rounded-md">HTML</span>
+                        <span class="text-xs py-1 px-3 bg-black/50 text-gray-300 rounded-md">CSS</span>
+                        <span class="text-xs py-1 px-3 bg-black/50 text-gray-300 rounded-md">JavaScript</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-sm font-bold">
+                        <a href="https://github.com/NotApel/Sukiye" class="flex items-center gap-2 text-accent hover:underline">View Source &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Contact Section -->
+         <section id="contact" class="py-32 px-[5%] border-t border-white/10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-accent font-bold tracking-[0.2em] uppercase text-sm mb-2 block">Get in Touch</span>
+                    <h2 class="text-4xl md:text-6xl font-black">Contact Me</h2>
+                </div>
+                <p class="text-gray-400 max-w-sm text-sm">Feel free to reach out for collaborations, inquiries, or just a friendly chat.</p>
+            </div>
+
+            <form action="mailto:mdazhan.mdkhairolfadzli@gmail.com" method="POST">  
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" name="name" placeholder="Name" required class="w-full p-4 rounded-lg bg-[#141416] border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-accent">
+                    <input type="email" name="email" placeholder="Email" required class="w-full p-4 rounded-lg bg-[#141416] border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-accent">
+                </div>
+                <textarea name="message" placeholder="Inquiries" required class="w-full p-4 rounded-lg bg-[#141416] border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-accent mb-6"></textarea>
+                <button type="submit" class="bg-accent text-black font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform shadow-lg shadow-accent/20">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
